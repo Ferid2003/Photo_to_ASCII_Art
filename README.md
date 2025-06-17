@@ -1,26 +1,6 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a id="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-    <img src="https://firebasestorage.googleapis.com/v0/b/pigeon-post-6156e.firebasestorage.app/o/default_user.svg?alt=media&token=a932cd77-1b1e-4edc-b36b-6784c14861b7" alt="Logo" width="80" height="80">
-  
-
-  <h3 align="center">Pigeon Post</h3>
-
-  <p align="center">
-    <br />
-    <a href="https://pigeonpost.netlify.app">Live Demo</a>
-  </p>
-</div>
 
 
 
@@ -52,31 +32,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<a href="https://pigeonpost.netlify.app">
-    <img src="src/assets/Screenshot_335.png" alt="Logo" width="900" height="550">
-</a>
-
-Pigeon Post is a messaging application similar WhatsApp. User can create account, send messages, media, documents, voice messages as well as make voice or video calls. Friend requests can be sent using the username of the user.
+As the name suggests the app takes the image and converts it into an ASCII art which can be viewed in termial.
 
 Here's the full list of features:
-* Ability to send all types of messages including Contact information of different user
-* Ability to make voice/video calls
-* Ability to create group chat with multiple users
-* Ability to perform group functions(example: Give user admin rights, remove user from group, add user to group and so on) :smile:
-* Ability to change name, description, profile picture
+* Ability to use different color variants
+* Ability to use different brightness mappings (average, min_max, luminosity)
+* Ability to use inverted colors
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-
-* [![React][React.js]][React-url]
-* [![Vite][Vite.js]][Vite-url]
-* [![Firebase][Firebase.js]][Firebase-url]
-* [![Netlify][Netlify.js]][Netlify-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,47 +49,34 @@ Here's the full list of features:
 
 To get a local copy up and running follow these simple example steps.
 
+
+
+## Prerequisite
+
+Before installing the project make sure that your terminal settings for Screen Buffer size, Window size and Command History Buffer size are maxed out. (In CMD most of these are capped at 9999).
+Below are the instructions on how to do this.
+
 ### Installation
 
-Follow the instruction to get the local copy of the app.
+Follow the instruction to get the local copy of the app. Use CMD/PowerShell or any other CMD alternative.
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Ferid2003/Pigeon_Post.git
+   git clone https://github.com/Ferid2003/Photo_to_ASCII_Art.git
    ```
-2. Install NPM packages
+2. Go to cloned repo
    ```sh
-   npm install
+   cd Photo_to_ASCII_Art
    ```
-3. Enter your Firebase configs in `Firebase.js`
-   ```js
-   const firebaseConfig = {
-    apiKey: ///,
-    authDomain: ///,
-    databaseURL: ///,
-    projectId: ///,
-    storageBucket: ///,
-    messagingSenderId: ///,
-    appId: ///,
-    measurementId: ///,
-   }
-
-   ```
-4. Enter your Stream API key in `Stream.jsx`<br/>
-   Note that you can leave this part if you do not plan on using Stream functionality
-   ```js
-   return new StreamVideoClient({
-            apiKey: ////,
-            token: userStreamToken,
-            user: { id: userData.uid },
-        });
-
-   ```
-6. Change git remote url to avoid accidental pushes to base project
+3. Compile the maven project
    ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
+   mvn compile
    ```
+4. Execute the maven project
+   ```js
+   mvn exec:java -Dexec.mainClass=com.farid.Main
+   ```
+5. Select desired settings in the opened GUI and enjoy :smile:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,7 +85,7 @@ Follow the instruction to get the local copy of the app.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Here are the screenshots from different parts of application.
+Below are the screenshots from different parts of application.
 
 ### Login/Register Page
 <img src="src/assets/Screenshot_342.png" alt="Logo" width="700" height="500">
@@ -162,24 +111,12 @@ Here are the screenshots from different parts of application.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add smooth mobile experience
-- [ ] Add ability to change wallpaper
-- [ ] Add chat customization options
-- [ ] Add message search for chats
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <!-- CONTACT -->
 ## Contact
 
 Farid Aghazada - feridagazade157@gmail.com
 
-Project Link: [https://github.com/Ferid2003/Pigeon_Post](https://github.com/Ferid2003/Pigeon_Post)
+Project Link: [https://github.com/Ferid2003/Photo_to_ASCII_Art](https://github.com/Ferid2003/Photo_to_ASCII_Art)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -188,34 +125,11 @@ Project Link: [https://github.com/Ferid2003/Pigeon_Post](https://github.com/Feri
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Stream](https://getstream.io)
-* [Shader Gradient](https://www.shadergradient.co)
-* [Happy Hues](https://www.happyhues.co)
+* [Robert Heaton](https://robertheaton.com/2018/06/12/programming-projects-for-advanced-beginners-ascii-art/)
+* [Jansi](https://fusesource.github.io/jansi/)
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vite.js]: https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white
-[Vite-url]: https://vitejs.dev/
-[Firebase.js]: https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black
-[Firebase-url]: https://firebase.google.com/
-[Netlify.js]: https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white
-[Netlify-url]: https://www.netlify.com/
 
 

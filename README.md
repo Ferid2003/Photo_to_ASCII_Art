@@ -10,18 +10,15 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
+        <li><a href="#prerequisite">Prerequisite</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -32,7 +29,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-As the name suggests the app takes the image and converts it into an ASCII art which can be viewed in termial.
+As the name suggests the app takes the image, scales down and converts it into an ASCII art which can be viewed in termial.
 
 Here's the full list of features:
 * Ability to use different color variants
@@ -55,6 +52,18 @@ To get a local copy up and running follow these simple example steps.
 
 Before installing the project make sure that your terminal settings for Screen Buffer size, Window size and Command History Buffer size are maxed out. (In CMD most of these are capped at 9999).
 Below are the instructions on how to do this.
+
+Right clikc the CMD window and you will the "defaults" and "properties" sections. You can click either one of them.
+
+<img src="assets/Screenshot_343.png" alt="Cmd1" width="400" height="300">
+
+Change the Buffer size in Options section.
+
+<img src="assets/Screenshot_344.png" alt="Cmd2" width="400" height="300">
+
+Change the Screen Buffer size and Window size.
+
+<img src="assets/Screenshot_345.png" alt="Cmd3" width="400" height="300">
 
 ### Installation
 
@@ -87,26 +96,17 @@ Follow the instruction to get the local copy of the app. Use CMD/PowerShell or a
 
 Below are the screenshots from different parts of application.
 
-### Login/Register Page
-<img src="src/assets/Screenshot_342.png" alt="Logo" width="700" height="500">
+### GUI
+<img src="assets/Screenshot_346.png" alt="GUI" width="400" height="300">
 
-### Friend Request Sending Screen
-<img src="src/assets/Screenshot_336.png" alt="Logo" width="700" height="500">
+### Example ASCII art (Image on the right is original)
+<img src="assets/image (1).png" alt="Example_art" width="700" height="500">
 
-### Group Settings Screen
-<img src="src/assets/Screenshot_337.png" alt="Logo" width="700" height="500">
+### Example ASCII art with inverted colors (Image on the right is original)
+<img src="assets/image (3).png" alt="Example_art_inverted" width="700" height="500">
 
-### User Settings Screen
-<img src="src/assets/Screenshot_341.png" alt="Logo" width="700" height="500">
-
-### Group Functions
-<img src="src/assets/Screenshot_338.png" alt="Logo" width="700" height="500">
-
-### Message Functions
-<img src="src/assets/Screenshot_339.png" alt="Logo" width="700" height="500">
-
-### Chat Information Screen
-<img src="src/assets/Screenshot_340.png" alt="Logo" width="700" height="500">
+### Example ASCII art with different colors (Image on the right is original)
+<img src="assets/image (5).png" alt="Logo" width="700" height="500">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
